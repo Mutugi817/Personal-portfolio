@@ -169,14 +169,14 @@ button{
     line-height: 1.5;
     background-color: var(--white-alpha-40);
     border: none;
-    padding: 10px 28px;
+    padding: 10px 20px;
     display: inline-block;
-    border-radius: 20px 10px;
+    border-radius: 15px 10px;
     color: rgba(0, 0, 128, 0.713);
     font-weight: bold;
     text-transform: capitalize;
     font-family: inherit;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     user-select: none;
     position: relative;
