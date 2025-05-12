@@ -195,7 +195,7 @@ button{
 .btn span {
     position: absolute;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: navy;
     transform: translate(-50%, -50%);
     pointer-events: none;
     animation: animate 1s linear infinite
@@ -486,7 +486,7 @@ Header
 .header .nav-inner ul li a{
     font-size: 40px;
     text-transform: capitalize;
-    color: yellow;
+    color: rgba(255, 255, 255, 0.751);
     display: block;
     font-weight: 500;
     padding: 8px 15px;
@@ -530,7 +530,11 @@ Home Section
 }
 .home-text p{
     font-size: 25px;
-    color: navy;
+      background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
+    background-size: 400%;;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textanimate 10s linear infinite;
 }
 .home-text h1{
     font-size: 45px;
@@ -545,15 +549,18 @@ Home Section
     animation: textanimate 10s linear infinite;
 }
 
-.home-text h2{
-    font-size: 25px;
+.home-text h2 #span{
+    font-size: 20px;
     margin: 0 0 30px;
     margin-top: 7px;
-    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
-    background-size: 400%;
+    color: green;
+      background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
+    background-size: 400%;;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: textanimate 10s linear infinite;
+
+   
 }
 
 @keyframes textanimate {
@@ -567,14 +574,14 @@ Home Section
 
 .home-text .btn{
     margin: 0 15px 15px 0;
-    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
-    background-size: 400%;;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: textanimate 10s linear infinite;
+    background-color: var(--white-alpha-40);
 }
+
+
+
 .home-img .img-box{
     max-width: 560px;
+    animation: textanimate 10s linear infinite;
     background-color: var(--white-alpha-25);
     border-radius: 50px 10px;
     margin: auto;
@@ -852,7 +859,7 @@ Contact Section
     margin-bottom: 30px;
 }
 .contact-form .input-control::placeholder{
-    color: var(--blue-dark);
+    color: var(--main-color);
     opacity: 0.8;
     font-weight: 300;
 }
@@ -933,7 +940,7 @@ Responsive
     }
     .home-img .img-box{
         max-width: 300px;
-        margin: auto;
+        margin-left: 30px;
     }
     .home-text .btn{
         margin: 0 7px 15px;
@@ -965,6 +972,7 @@ Responsive
     .contact-info-item{
         padding: 0;
     }
+    
 
 }
 @media(max-width:575px){
