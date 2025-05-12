@@ -286,7 +286,7 @@ button{
 .bg-circles .circle-2{
     height: 80px;
     width: 80px;
-    background-color: rgb(83, 164, 55);
+    background-color: rgb(215, 16, 215);
     left: 40%;
     top: 50%;
     opacity: 0.4;
@@ -530,16 +530,27 @@ Home Section
 }
 .home-text p{
     font-size: 25px;
-    color: yellow;
+    color: navy;
 }
 .home-text h1{
     font-size: 45px;
     text-transform: capitalize;
-    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
-    background-size: 400%;;
     font-weight: 600;
     letter-spacing: 1px;
     word-spacing: 1px;
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
+    background-size: 400%;;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textanimate 10s linear infinite;
+}
+
+.home-text h2{
+    font-size: 25px;
+    margin: 0 0 30px;
+    margin-top: 7px;
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
+    background-size: 400%;;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: textanimate 10s linear infinite;
@@ -554,14 +565,13 @@ Home Section
     }
 }
 
-.home-text h2{
-    font-size: 25px;
-    margin: 0 0 30px;
-    margin-top: 7px;
-    color: yellow;
-}
 .home-text .btn{
     margin: 0 15px 15px 0;
+    background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
+    background-size: 400%;;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: textanimate 10s linear infinite;
 }
 .home-img .img-box{
     max-width: 560px;
@@ -923,6 +933,7 @@ Responsive
     }
     .home-img .img-box{
         max-width: 300px;
+        margin: auto;
     }
     .home-text .btn{
         margin: 0 7px 15px;
