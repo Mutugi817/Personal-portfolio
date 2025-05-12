@@ -550,7 +550,7 @@ Home Section
     margin: 0 0 30px;
     margin-top: 7px;
     background: linear-gradient(90deg, #ff0000, #ffff00,#ff00c4,  #ff00f3, navy, blue, #ff0000);
-    background-size: 400%;;
+    background-size: 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: textanimate 10s linear infinite;
